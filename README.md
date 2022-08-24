@@ -1,9 +1,9 @@
 # Create a centralized routing config with React-Router-DOM-JSONRoutes
 
-react-router-dom-jsonroutes is the simplified way of handling all your multi-nested routes in one single place as JSON data, RRDJR comes with only two props `routesList` and `authMiddleware`
+`react-router-dom-jsonroutes` is the simplified way of handling all your multi-nested routes in one single place as JSON data, RRDJR comes with only two props `routesList` and `authMiddleware`
 
 ## Feature highlights
-This library comes with 3 important features
+This library comes with 4 important features
 
 *	[x] JSON routing (centralized routing)
 *	[x] Authentication
@@ -29,7 +29,7 @@ const Dashboard from "../modules/Dashboard";
 ```
 
 
-**Step 2:** Create `routesList` JSON object with all your application routes, see nested example here
+**Step 2:** Create `routesList` JSON object with all your application routes, see [Nested Examples](https://github.com/vivekmengu016/react-router-dom-jsonroutes/blob/master/src/examples/NestedRoutes.jsx) here
 ```jsx
 /* add all your application routes as json data */
 const routesList = [{
@@ -77,7 +77,7 @@ return(
 
 We found value in having a centralized route configuration, A route is just data. React is great at mapping data into components, and is a component.
 
-Route config is just an array of logical “routes” with `path`, `component`, and `secure` props as way as you would add to a component.
+Route config is just an array of logical “routes” with `path`, `component`, `secure` and `index` props same way as you would add to any component.
 
 #### Basic Example
 ```jsx
@@ -125,7 +125,8 @@ const routesList = [{
 
 ## Authentication
 
-Why not have a centralization routing config? With authentication capabilities as a win-win option, RRDJR comes with authMiddleware prop which helps you to navigate users if not logged In.
+Why not have a centralization routing config? 
+With authentication capabilities as a win-win for developers, RRDJR comes with `authMiddleware` prop which helps you to navigate users if not logged In.
 
 #### Basic Example
 ```jsx
