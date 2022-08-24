@@ -20,7 +20,7 @@ npm install react-router-dom-jsonroutes --save
 
 **Step 1:** Import the library and your favorite route components
 ```jsx
-import { BrowserRouter } from "react-router-dom";
+import { BrowserRouter, Navigate } from "react-router-dom";
 import JsonRoutes from "react-router-dom-jsonroutes";
 
 /* import your components here */
