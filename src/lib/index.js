@@ -15,7 +15,7 @@ const RRDJR = ({ routesList, authMiddleware: Component }) => {
 		return item?.map((childi, index) => {
 			return (
 				<Fragment key={`${index}_${path}${childi.path}`}>
-					{childi.component ? <Route index={childi.index ? true : undefined} path={childi.index ? undefined : `${path}/${childi.path}`} element={<Component secure={isUndefined(childi.secure) ? secure : childi.secure} component={childi.component} />} /> : null}
+					{childi.component ? <Route index={childi.index ? true : undefined} path={childi.index ? undefined : `/${path}/${childi.path}`} element={<Component secure={isUndefined(childi.secure) ? secure : childi.secure} component={childi.component} />} /> : null}
 					{childi.wrapper ? <Route path={`/${path}/${childi.path}`} element={<Component secure={isUndefined(childi.secure) ? secure : childi.secure} component={childi.wrapper} />}>
 						{childi?.children?.length ? RRDJR_nest(childi.children, `${path}/${childi.path}`, isUndefined(childi.secure) ? secure : childi.secure) : null}
 					</Route> : null}
