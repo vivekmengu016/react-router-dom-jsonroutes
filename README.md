@@ -11,6 +11,10 @@ This library comes with 4 important features
 *   [x] Index Route
 
 ### Install
+> [!NOTE]  
+> This package works best with `react-router-dom@6.3.0`
+
+
 ```node
 npm install react-router-dom-jsonroutes --save
 

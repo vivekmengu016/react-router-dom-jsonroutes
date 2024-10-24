@@ -24,3 +24,4 @@ yarn-error.log*
 
 /dist
 /src/examples/TestFile.jsx
+/src/examples/lib.js
